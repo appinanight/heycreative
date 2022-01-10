@@ -1,0 +1,20 @@
+title: Document
+
+accept: 
+ - text/csv
+ - application/csv
+ - text/plain
+ - application/pdf
+ - application/x-pdf
+ - application/zip
+ - application/msword
+ - application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+
+sections:
+  content:
+    type: fields
+    fields:
+      headline:
+        label: Document
+        type: headline
+        numbered: false

@@ -1,0 +1,35 @@
+image: wearejust/docker-ci:8.1
+
+before_script:
+    - composer config cache-files-dir /composer_cache
+    - yarn config set cache-folder /yarn_cache
+
+cache:
+    paths:
+        - kirby/
+        - vendor/
+
+stages:
+    - deploy
+
+
+deploy_to_staging:
+    stage: deploy
+    allow_failure: false
+    script:
+        - dep deploy staging -vvv
+    environment:
+        name: staging
+    only:
+        - staging
+
+# deploy_to_production:
+#     stage: deploy
+#     allow_failure: false
+#     script:
+#         - dep deploy production -vvv
+#     environment:
+#         name: production
+#     only:
+#         - master
+#     when: manual

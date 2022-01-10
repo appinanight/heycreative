@@ -1,0 +1,14 @@
+{% extends "@snippets/content-blocks/_base-block.twig" %}
+
+{% block content %}
+    <div class="content-block content-block--image">
+        <div class="container">
+            <figure>
+                <img src="{{ block.content.image.toFile.resize(800,null,90).url }}" alt="{{ block.content.alt }}" />
+            </figure>
+            {% if block.content.caption != '' %}
+                <span>{{ block.content.caption | nl2br }}</span>
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}

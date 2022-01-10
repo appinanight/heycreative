@@ -1,0 +1,151 @@
+title: Home
+icon: home
+
+options: 
+  extends: options/none
+
+tabs:
+  main:
+    type: fields
+    label: Intro
+    fields:
+      siteIntro:
+          extends: fields/intro
+          label: Website introductie tekst
+  
+  
+  chapter1:
+    type: fields
+    label: Hoofdstuk 1
+    fields:
+      chapter1_title:
+        type: text
+        label: Hoofdstuk 1 titel
+        width: 1/2
+      chapter1_image:
+        type: files
+        multiple: false
+        label: Hoofdstuk 1 afbeelding
+        width: 1/2
+      chapter1_text:
+        extends: fields/intro
+        label: Hoofdstuk 1 tekst
+        width: 2/2
+  
+  chapter2:
+    type: fields
+    label: Hoofdstuk 2
+    fields:
+      chapter2_title:
+        type: text
+        label: Hoofdstuk 2 titel
+        width: 1/2
+      chapter2_image:
+        type: files
+        multiple: false
+        label: Hoofdstuk 2 afbeelding
+        width: 1/2
+      chapter2_text:
+        extends: fields/intro
+        label: Hoofdstuk 2 tekst
+        width: 2/2
+
+      chapter2b_image:
+        type: files
+        multiple: false
+        label: Hoofdstuk 2b afbeelding
+        width: 1/2          
+      chapter2b_text:
+          extends: fields/intro
+          label: Hoofdstuk 2b tekst
+          width: 2/2
+  
+  chapter3:
+    type: fields
+    label: Hoofdstuk 3
+    fields:
+      chapter3_title:
+        type: text
+        label: Hoofdstuk 3 titel
+        width: 1/2
+      chapter3_image:
+        type: files
+        multiple: false
+        label: Hoofdstuk 3 afbeelding
+        width: 1/2
+      chapter3_text:
+        extends: fields/intro
+        label: Hoofdstuk 3 tekst
+        width: 2/2
+
+      chapter3b_image:
+        type: files
+        multiple: false
+        label: Hoofdstuk 3b afbeelding
+        width: 1/2          
+      chapter3b_text:
+          extends: fields/intro
+          label: Hoofdstuk 3b tekst
+          width: 2/2
+
+  chapter4:
+    type: fields
+    label: Hoofdstuk 4
+    fields:
+      chapter4_title:
+        type: text
+        label: Hoofdstuk 4 titel
+        width: 1/2
+      chapter4_image:
+        type: files
+        multiple: false
+        label: Hoofdstuk 4 afbeelding
+        width: 1/2
+      chapter4_text:
+        extends: fields/intro
+        label: Hoofdstuk 4 tekst
+        width: 2/2
+
+    
+  team:
+    type: fields
+    label: Team
+    fields:
+  
+  prices:
+    type: fields
+    label: Prijslijst
+    fields:
+  
+  opens:
+    type: fields
+    label: Openingstijden
+    fields:
+      monday:
+        type: text
+        label: Maandag
+      tuesday:
+        type: text
+        label: Dinsdag
+      wednesday:
+        type: text
+        label: Woensdag
+      thursday:
+        type: text
+        label: Donderdag
+      friday:
+        type: text
+        label: Vrijdag
+      saturday:
+        type: text
+        label: Zaterdag
+      sunday:
+        type: text
+        label: Zondag
+        
+
+      
+  
+      
+            
+          

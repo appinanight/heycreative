@@ -1,0 +1,37 @@
+title: Site
+
+tabs:
+
+  main:
+      label:
+        nl: Pagina's
+        en: Pages
+      icon: copy
+      columns:
+        - width: 1/2
+          sections:
+            # Add these pages to the content folder manualy
+            main_pages:
+              headline:
+                nl: Hoofdpagina's
+              type: pages
+              create: false
+              template:
+                - home
+
+            # additional_pages:
+            #   headline:
+            #     nl: Andere pagina's
+            #   type: pages
+            #   create: default
+            #   template:
+            #     - default
+            #     - default-secure
+
+     
+
+  medialibrary: tabs/medialibrary
+
+  # settings: tabs/site-settings
+
+  # admin: tabs/site-admin

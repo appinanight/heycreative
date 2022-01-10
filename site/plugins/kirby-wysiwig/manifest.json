@@ -1,0 +1,6 @@
+{
+  "main.js": "index.js",
+  "main.css": "index.css",
+  "main.js.map": "index.js.map",
+  "main.css.map": "index.css.map"
+}

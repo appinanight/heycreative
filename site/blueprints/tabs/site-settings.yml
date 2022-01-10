@@ -1,0 +1,92 @@
+label:
+  nl: Instellingen
+  en: Settings
+icon: wand
+columns: 
+  - width: 2/3
+    sections:
+      seo:
+        type: fields
+        fields:
+          
+          site_title:
+            width: 1/2 
+            label: Site Titel
+            translate: false
+            required: true
+            type: text
+
+          site_payoff:
+            width: 1/2
+            label: Site Payoff
+            required: true
+            type: text
+
+          site_description:
+            label: Meta Omschrijving
+            required: true
+            type: textarea
+            buttons: false
+            size: small
+
+          site_share_landscape:
+            width: 1/2
+            required: true
+            label: Share afbeelding breed
+            empty: Kies één afbeelding
+            type: files
+            multiple: false
+            layout: cards
+            size: small
+            query: site.images.template('image')
+            uploads: 
+              template: image
+
+          site_share_square:
+            width: 1/2
+            required: true
+            label: Share afbeelding vierkant
+            empty: Kies één afbeelding
+            type: files
+            multiple: false
+            layout: cards
+            size: small
+            query: site.images.template('image')
+            uploads: 
+              template: image
+            layout: cards
+            size: small
+
+  - width: 1/3
+    sections:
+      images: 
+        extends: sections/page-images
+        help: Voeg eerst hier afbeeldingen om als share afbeelding te gebruiken
+      
+      socials:
+        type: fields
+        fields:
+          headline:
+            label: Social media accounts
+            type: headline
+            numbered: false
+
+          # Add or comment out social platforms
+          # You can use the site method site->allSocials() (see plugins/extra-methods/index.pho)
+          # This will return an array of the fields with an additional field method ->label() to print the field label specified below
+       
+          linkedin: 
+            label: LinkedIn
+            type: url
+
+          twitter: 
+            label: Twitter
+            type: url
+
+          facebook: 
+            label: Facebook
+            type: url
+
+          instagram: 
+            label: Instagram
+            type: url

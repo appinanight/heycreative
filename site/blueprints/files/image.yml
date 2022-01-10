@@ -1,0 +1,28 @@
+title: 
+  nl: Afbeelding
+  en: Image
+
+accept: 
+  - image/jpeg
+  - image/jpg
+  - image/png
+
+columns:
+  - width: 1/2
+    sections:
+      content:
+        type: fields
+        fields:
+          focus:
+            label: Point of focus
+            type: focus
+
+  - width: 1/2
+    sections:
+      meta:
+        type: fields
+        fields:
+          alt:
+            label: Alt text
+            help: For screenreaders and SEO
+            type: text

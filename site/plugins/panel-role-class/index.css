@@ -1,0 +1,4 @@
+.k-panel:not(.role-admin) .k-tabs .k-link[href="#admin"] {
+    visibility: hidden;
+    pointer-events: none;
+}

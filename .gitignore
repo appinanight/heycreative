@@ -1,0 +1,10 @@
+vendor
+node_modules
+kirby
+public/assets/build
+storage/default/cache
+storage/default/accounts
+/.env.local
+/.env.local.php
+/.env.*.local
+yarn-error.log

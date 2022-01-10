@@ -1,0 +1,15 @@
+{% extends "@snippets/content-blocks/_base-block.twig" %}
+
+{% block content %}
+    {% if open %}
+        <div class="wrapping-container">
+    {% endif %}
+
+            <{{ block.level }}>
+                {{ block.text | raw }}
+            </{{ block.level }}>
+
+    {% if close %}
+        </div>
+    {% endif %}
+{% endblock %}

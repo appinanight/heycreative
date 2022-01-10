@@ -1,0 +1,32 @@
+label: Dev settings
+icon: star
+columns: 
+  - width: 1/3
+    sections:
+      menus_1:
+        headline: ''
+        type: fields
+        fields:
+  
+          nav_menu: 
+            label: Navigation menu
+            type: pages
+
+          nav_submenu: 
+            label: Navigation submenu
+            type: pages
+
+  - width: 1/3
+    sections:
+      menus_2:
+        headline: ''
+        type: fields
+        fields:
+
+          footer_menu: 
+            label: Footer menu
+            type: pages
+
+          footer_submenu:
+            label: Footer submenu
+            type: pages

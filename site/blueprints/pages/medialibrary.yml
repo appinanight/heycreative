@@ -1,0 +1,5 @@
+title: Medialibrary
+icon: false
+
+options:
+    extends: options/none

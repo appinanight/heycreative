@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <title>HEY - Hair Expert Yvonne</title>
+    <meta content="Bart Koelewijn" name="author">
+    <meta content="Hey Creative - de leukste en gezelligste kapsalon van Lisse." name="description">
+    <meta content="Kapsalon,Lisse,Haar" name="keywords">
+    <meta property="og:image" content="css/images/share.png" />
+    <link href="css/main.css?v=2" rel="stylesheet" type="text/css">
+    <link href="css/swiper.min.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.17/jquery.scrollify.min.js">
+    </script>
+    <script src="js/scrollreveal.min.js">
+    </script>
+    <script src="js/main.js">
+    </script>
+</head>
+<body>
+    <header class="header">
+        <img class="logo" src="uploads/logo.svg">
+        <img class="logo logo--right" src="uploads/logo.svg">
+        <div class="container">
+            <ul class="main-nav">
+                <li class="nav-item">
+                    <a class="js-anchor" href='over-ons'>Over ons</a>
+                </li>
+                <li class="nav-item">
+                    <a href='https://bjootify.com/salon/ea035ed6-51ae-4cec-8215-7306730ec7e4'>Afspraak maken</a>
+                </li>
+                <li class="nav-item nav-item--alt">
+                    <a class="js-anchor" href='prijslijst'>Prijslijst</a>
+                </li>
+                <li class="nav-item">
+                    <a class="js-anchor" href='contact'>Contact</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="cover js-scroll-section">
+        <div class="page cover-content">
+            <img class="cover-logo" src="css/images/logo.svg">
+            <div class="container-small" style="text-shadow: 2px 1px 4px #000; max-width: 43em;">
+                <p></p>
+            	{{ page.siteIntro() | raw }}
+            	<p></p>
+            </div><a style="display: table; margin: 15px auto 0; " class="fancybox" data-fancybox-type="iframe" href="https://bjootify.com/salon/ea035ed6-51ae-4cec-8215-7306730ec7e4"><span class="btn btn-primary" style="background-color: rgba(0, 0, 0, 0.35);">Afspraak maken</span></a>
+               
+        </div>
+    </div>
+    
+  
+    
+    <div class="block-alt" style="background: #bfa08c">
+        <div class="flex-height js-scroll-section">
+            <div class="block-inner__left block--image" style="background-image: url(uploads/bathroom.jpg); background-position-x: 25%;"></div>
+            <div class="block-inner__right page section block--content" id="over-ons">
+                <div class="content-alt">
+                    <div class="content-alt__inner" style="color:#ffffff">
+                        <h1><span style="color:#ffffff">{{ page.chapter1_title() | raw }}</span></h1>
+						{{ page.chapter1_text() | raw }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="block-alt">
+        <div class="flex-height js-scroll-section">
+            <div class="block-inner__left page section block--content">
+                <div class="content-alt">
+                    <div class="content-alt__inner">
+                        <h2>{{ page.chapter2_title() | raw }}</h2>
+						{{ page.chapter2_text() | raw }}
+                    </div>
+                </div>
+            </div>
+            <div class="block-inner__right block--image block--image-fade block--image-fade-alt" style="background-image: url(uploads/foto-zaak-10.jpg); background-position-x: 0;     background-position-y: 0;"></div>
+        </div>
+    </div>
+    <div class=" block-alt">
+        <div class="flex-height js-scroll-section">
+            <div class="block-inner__left block--image block--image-fade" style="    background-position-x: 50%; background-image: url(uploads/fotostoelen.jpg)"></div>
+            <div class="block-inner__right page section block--content">
+                <div class="content-alt">
+                    <div class="content-alt__inner">
+						{{ page.chapter2b_text() | raw }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="outter">
+        <div class="section page flex-height flex-alt js-scroll-section block">
+            <div class="block-inner" style="width: 100%;">
+                <div class="section testimonials group">
+                    <div class="testimonial-wrapper">
+                        <div class="testimonial">
+                            <div class="square">
+                                <div class="ratio-inner">
+                                    <div class="testimonial-image" style="background-image: url('uploads/pers-yvonne-kleur.jpg');"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-info">
+                            <h3 class="testimonial-title">Yvonne</h3>
+                            <p></p>
+                        </div>
+                    </div>
+         
+                  
+                     <div class="testimonial-wrapper">
+                        <div class="testimonial">
+                            <div class="square">
+                                <div class="ratio-inner">
+                                    <div class="testimonial-image" style="background-image: url('uploads/pers-tessa-kleur.jpg'); background-position: center 14%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-info">
+                            <h3 class="testimonial-title">Tessa</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="testimonial-wrapper">
+                        <div class="testimonial">
+                            <div class="square">
+                                <div class="ratio-inner">
+                                    <div class="testimonial-image" style="background-image: url('uploads/pers-jinte-kleur.jpg');"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-info">
+                            <h3 class="testimonial-title">Jinte</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="testimonial-wrapper">
+                        <div class="testimonial">
+                            <div class="square">
+                                <div class="ratio-inner">
+                                    <div class="testimonial-image" style="background-image: url('uploads/lisa.jpeg'); background-position-y: 10%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-info">
+                            <h3 class="testimonial-title">Lisa</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                  
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block-alt">
+        <div class="flex-height js-scroll-section">
+            <div class="block-inner__left block--image block--image-fade" style="background-image: url(uploads/kevinmurphywoman.jpg)"></div>
+            <div class="block-inner__right page section block--content">
+                <div class="content-alt">
+                    <div class="content-alt__inner">
+                        <h2>{{ page.chapter3_title() | raw }}</h2>
+						{{ page.chapter3_text() | raw }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block-alt" style="background: #92b3ca">
+        <div class="flex-height">
+            <div class="block-inner__left page section block--content">
+                <div class="content-alt">
+                    <div class="content-alt__inner" style="color: #fff;">
+						{{ page.chapter3b_text() | raw }}
+                    </div>
+                </div>
+            </div>
+            <div class="block-inner__right block--image" style="background-image: url(uploads/4.jpg)">  
+            </div>
+        </div>
+    </div>
+
+    <div class=" block-alt" >
+        <div class="flex-height">
+            <div class="block-inner__left block--image" style="background-image: url(uploads/km-fles.jpg)"> 
+            </div>
+            <div class="block-inner__right page section block--content">
+                <div class="content-alt">
+                    <div class="content-alt__inner">
+						<h2>{{ page.chapter4_title() | raw }}</h2>
+						{{ page.chapter4_text() | raw }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block-alt">
+        <div class="flex-height js-scroll-section">
+            <div id="prijslijst" class="block-inner__left block--image block--image-fade" style="background-image: url(uploads/priceimage.jpg)"></div>
+            <div class="block-inner__right page section block--content">
+                <div class="content-alt">
+                    <div class="content-alt__inner">
+                        <h2>Prijslijst</h2>
+                        <table class="price-table">
+                            <tr>
+                                <td>Wassen Knippen Drogen</td>
+                                <td>vanaf € 44,50</td>
+                            </tr>
+                            <tr>
+                                <td>Wassen Knippen Fohnen / Watergolven</td>
+                                <td>vanaf € 56,50</td>
+                            </tr>
+                            <tr>
+                                <td>Wassen knippen Föhnen lang haar</td>
+                                <td>vanaf € 69,50</td>
+                            </tr>
+                            <tr>
+                                <td>Wassen Föhnen / Watergolven</td>
+                                <td>vanaf € 35,00</td>
+                            </tr>
+                             <tr>
+                                <td>Wassen Föhnen toeslag langhaar</td>
+                                <td>vanaf € 17,50</td>
+                            </tr>
+                            <tr>
+                                <td>Wassen Knippen Stylen Heren</td>
+                                <td>vanaf € 35,00</td>
+                            </tr>
+                            <tr><td>&nbsp;</td></tr>
+                            <tr>
+                                <td>Kleuren Ammonia vrij</td>
+                                <td>vanaf € 46,00</td>
+                            </tr>
+                            <tr>
+                                <td>High lights half lang haar</td>
+                                <td>vanaf € 87,00</td>
+                            </tr>
+                            <tr>
+                                <td>High lights lang haar / Balayage</td>
+                                <td>vanaf € 99,00</td>
+                            </tr>
+                            <tr><td>&nbsp;</td></tr>
+                    
+                            <tr>
+                                <td>Permanent excl. Knippen</td>
+                                <td>vanaf € 77,00</td>
+                            </tr>
+                            <tr>
+                                <td>Permanent half lang excl. Knippen</td>
+                                <td>vanaf € 87,00</td>
+                            </tr>
+                            <tr>
+                                <td>Permanent lang excl. Knippen</td>
+                                <td>vanaf € 97,00</td>
+                            </tr>
+                            <tr>
+                                <td>Massage</td>
+                                <td>vanaf € 16,00</td>
+                            </tr>
+                        </table>
+
+                        <p style="font-size: 0.85em; margin-top: 2rem; font-style:italic;">We stemmen de behandeling af op jouw wensen. Indien gewenst kunnen we voorafgaand aan de behandeling de exacte kosten berekenen.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block-alt">
+        <div class="flex-height js-scroll-section">
+            <div class="block-inner__left page section block--content" id="contact">
+                <div class="content-alt">
+                    <div class="content-alt__inner">
+                        <h2>Kom gezellig langs</h2>
+                        <p>Koninginneweg 85, 2161 ZB Lisse<br>
+                        Tel: <a class="u-bare" href="tel:0252347633">0252 347 633</a><br>
+                        Mail: <a class="u-bare" href="mailto:yvonne@heycreative.nl">yvonne@heycreative.nl</a></p>
+                        <div class="contact-info">
+                            <h3>Openingstijden</h3>
+                            <table class="contact-table">
+                                <tr>
+                                    <td>Zondag:</td>
+                                    <td>{{ page.monday() | raw }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Maandag:</td>
+                                    <td>Gesloten</td>
+                                </tr>
+                                <tr>
+                                    <td>Dinsdag:</td>
+                                    <td>8:30 - 18:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Woensdag:</td>
+                                    <td>8:30 - 18:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Donderdag:</td>
+                                    <td>8:30 - 21:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Vrijdag:</td>
+                                    <td>8:30 - 18:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Zaterdag:</td>
+                                    <td>8:30 - 17:00</td>
+                                </tr>
+                                
+                            </table>
+                        </div>
+                        <p>Volg ons ook op social media</p>
+                        <ul class="social-list">
+                            <li class="social-item">
+                                <a href="https://www.instagram.com/salon_heycreative/" target="_blank" class="social-link"><img src="uploads/instagram.svg"></a>
+                            </li>
+                            <li class="social-item">
+                                <a href="https://www.facebook.com/HEY-creative-1663525883921388/" target="_blank" class="social-link"><img src="uploads/facebook.svg"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="block-inner__right block--image block--image-fade block--image-fade-alt" style="background-image: url(uploads/foto-zaak-5.jpg)"></div>
+        </div>
+    </div>
+
+</body>
+</html>

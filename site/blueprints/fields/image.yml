@@ -1,0 +1,7 @@
+label: Afbeelding
+type: files
+multiple: false
+query: site.find('medialibrary').files.filterBy('template', 'image').sortBy('createdAt', 'desc')
+uploads:
+    parent: site.find('medialibrary')
+    template: image

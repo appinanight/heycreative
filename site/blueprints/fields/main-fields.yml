@@ -1,0 +1,20 @@
+type: fields
+fields:
+
+  alternate_title:
+    label: 
+      nl: Alternatieve titel
+      en: Alternate titel
+    type: text
+
+  description:
+    width: 1/2
+    label: 
+      nl: Introductie / omschrijving
+      en: Introduction / description
+    type: textarea
+    buttons: false
+    maxlength: 300
+    help: 
+     nl: 'Tip: Gebruik tussen de 150 en 250 leestekens'
+     en: 'Tip: Use 150 to 250 characters'

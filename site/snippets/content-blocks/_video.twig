@@ -1,0 +1,19 @@
+{% extends "@snippets/content-blocks/_base-block.twig" %}
+
+{% block content %}
+<div class="content-block content-block--image content-block--video">
+    <div class="container">
+        <figure>
+            <img src="{{ block.content.image.toFile.resize(800,null,90).url }}" alt="{{ block.content.image.toFile.alt }}" />
+            <a 
+                href="{{ block.content.url }}"
+                data-fancybox
+                class="content-block--video__play" 
+            >{{ source('@snippets/svg/_play.svg') }}</a>
+        </figure>
+        {% if block.content.caption %}
+            <span>{{ block.content.caption }}</span>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

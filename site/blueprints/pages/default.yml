@@ -1,0 +1,34 @@
+title: 
+  nl: Basis
+  en: Basic
+icon: page
+
+status:
+  unlisted: true
+
+tabs:
+  main:
+    label: 
+      nl: Inhoud
+      en: Content
+    icon: document
+    columns:
+      - width: 2/3
+        sections:
+          main_fields:
+            extends: fields/main-fields
+            
+          main_builder:
+            type: fields
+            fields:
+              content_blocks:
+                extends: fields/base-builder
+      
+      - width: 1/3
+        sections:
+          sidebar:
+            type: fields
+            fields:
+
+  media: tabs/media
+  seo: tabs/seo

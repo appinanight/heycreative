@@ -1,0 +1,38 @@
+icon: search
+label: SEO
+columns:
+  - width: 3/3
+    sections:
+      seo:
+        type: fields
+        fields:
+
+          seo_info:
+            label: false
+            type: info
+            text: |
+              Gebruik deze velden om de algemene SEO instellingen te overschrijven voor deze pagina
+
+          seo_title: 
+            label: Meta titel
+            type: text
+
+          seo_description:
+            width: 1/2 
+            label: Meta omschrijving
+            type: textarea
+            buttons: false
+            size: small
+            help: Idealiter rond 200 leestekens
+
+          seo_image:
+            width: 1/2
+            label: Share afbeelding
+            type: files
+            multiple: false
+            empty: Kies één afbeelding
+            query: page.images.template('image')
+            layout: cards
+            size: medium
+            uploads: 
+              template: image

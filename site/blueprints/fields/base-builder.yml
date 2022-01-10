@@ -1,0 +1,53 @@
+label: Pagina Inhoud
+type: blocks
+fieldsets:
+  heading:
+    extends: blocks/heading
+    fields:
+      level:
+        options:
+          - h2
+          - h3
+          - h4
+  - text
+  - list
+  - quote
+
+  video:
+    extends: blocks/video
+			fields:
+				url: 
+					help: 
+						nl: Youtube of Vimeo 
+						en: Youtube or Vimeo
+				image: 
+					label: Afbeelding
+					type: files
+					layout: cards
+					multiple: false
+					query: page.files.filterBy('template', 'image')
+					uploads: image
+					link: false
+
+
+  image:
+    extends: blocks/image
+			fields:
+				location: false
+				link: false
+				ratio: false
+				crop: false
+				image:
+					type: files
+					layout: cards
+					size: medium
+					multiple: false
+					min: 1
+					query: page.files.filterBy('template', 'image')
+					uploads: image
+					link: false
+					when: true
+
+				caption:
+					type: textarea
+					buttons: false

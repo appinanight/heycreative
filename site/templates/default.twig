@@ -1,0 +1,22 @@
+{% extends 'layouts/master.twig' %}
+
+{# 
+    Use the bodyClass block to add an additional class to <body> for this template 
+#}
+{% block bodyClass 'additional-class' %}
+
+{% block content %}
+    
+    <h2>Hello World from the default template</h2>
+
+    {# 
+        Example translation usage for multilang site
+        Use the translate filter to grab the translation you've setup in site/languages/<language-code>.yaml 
+        <h4>{{ 'example.title' | translate }}</h4>
+    #}
+
+    {% block contentBlocks %}
+        {% include '@snippets/_blocks-loop.twig' with { blocks: page.content_blocks.toBlocks() } only %}
+    {% endblock %}
+
+{% endblock %}

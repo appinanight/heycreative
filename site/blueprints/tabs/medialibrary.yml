@@ -1,0 +1,32 @@
+label: Media
+icon: file
+
+columns:
+    - width: 2/3
+          sections:
+              info_images:
+                  type: info
+                  headline: Afbeeldingen
+                  text: Voeg afbeeldingen toe om binnen de site te gebruiken
+
+              images:
+                  parent: site.find('medialibrary')
+                  headline: '{{}}'
+                  type: files
+                  template: image
+                  layout: cards
+                  size: tiny
+                  sortBy: createdAt desc
+
+    - width: 1/3
+          sections:
+              info_docs:
+                  type: info
+                  headline: Documenten
+                  text: Voeg documenten toe om binnen de site te gebruiken
+              documents:
+                  parent: site.find('medialibrary')
+                  headline: '{{}}'
+                  type: files
+                  template: document
+                  flip: true
