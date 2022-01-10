@@ -116,6 +116,18 @@ tabs:
     type: fields
     label: Prijslijst
     fields:
+      pricesList:
+        label: Prijslijst
+        type: structure
+        fields:
+          pricesItem:
+            label: Product
+            type: text
+            width: 1/2
+          pricesItemPrice:
+            label: Prijs
+            type: text
+            width: 1/2
   
   opens:
     type: fields

@@ -205,62 +205,14 @@
                 <div class="content-alt">
                     <div class="content-alt__inner">
                         <h2>Prijslijst</h2>
+						
                         <table class="price-table">
-                            <tr>
-                                <td>Wassen Knippen Drogen</td>
-                                <td>vanaf € 44,50</td>
-                            </tr>
-                            <tr>
-                                <td>Wassen Knippen Fohnen / Watergolven</td>
-                                <td>vanaf € 56,50</td>
-                            </tr>
-                            <tr>
-                                <td>Wassen knippen Föhnen lang haar</td>
-                                <td>vanaf € 69,50</td>
-                            </tr>
-                            <tr>
-                                <td>Wassen Föhnen / Watergolven</td>
-                                <td>vanaf € 35,00</td>
-                            </tr>
-                             <tr>
-                                <td>Wassen Föhnen toeslag langhaar</td>
-                                <td>vanaf € 17,50</td>
-                            </tr>
-                            <tr>
-                                <td>Wassen Knippen Stylen Heren</td>
-                                <td>vanaf € 35,00</td>
-                            </tr>
-                            <tr><td>&nbsp;</td></tr>
-                            <tr>
-                                <td>Kleuren Ammonia vrij</td>
-                                <td>vanaf € 46,00</td>
-                            </tr>
-                            <tr>
-                                <td>High lights half lang haar</td>
-                                <td>vanaf € 87,00</td>
-                            </tr>
-                            <tr>
-                                <td>High lights lang haar / Balayage</td>
-                                <td>vanaf € 99,00</td>
-                            </tr>
-                            <tr><td>&nbsp;</td></tr>
-                    
-                            <tr>
-                                <td>Permanent excl. Knippen</td>
-                                <td>vanaf € 77,00</td>
-                            </tr>
-                            <tr>
-                                <td>Permanent half lang excl. Knippen</td>
-                                <td>vanaf € 87,00</td>
-                            </tr>
-                            <tr>
-                                <td>Permanent lang excl. Knippen</td>
-                                <td>vanaf € 97,00</td>
-                            </tr>
-                            <tr>
-                                <td>Massage</td>
-                                <td>vanaf € 16,00</td>
-                            </tr>
+							{% for item in page.pricesList.toStructure() %}
+								<tr>
+									<td>{{item.content.pricesItem}}</td>
+									<td>{{item.content.pricesItemPrice}}</td>
+								</tr>
+							{% endfor %}
                         </table>
 
                         <p style="font-size: 0.85em; margin-top: 2rem; font-style:italic;">We stemmen de behandeling af op jouw wensen. Indien gewenst kunnen we voorafgaand aan de behandeling de exacte kosten berekenen.</p>
