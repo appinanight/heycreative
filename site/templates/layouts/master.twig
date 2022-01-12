@@ -40,7 +40,7 @@
             </ul>
         </div>
     </header>
-    <div class="cover js-scroll-section">
+    <div class="cover js-scroll-section" style="background-image: url('{{page.siteIntroImage.toFile().url}}');">
         <div class="page cover-content">
             <img class="cover-logo" src="css/images/logo.svg">
             <div class="container-small" style="text-shadow: 2px 1px 4px #000; max-width: 43em;">
@@ -56,7 +56,7 @@
     
     <div class="block-alt" style="background: #bfa08c">
         <div class="flex-height js-scroll-section">
-            <div class="block-inner__left block--image" style="background-image: url(uploads/bathroom.jpg); background-position-x: 25%;"></div>
+            <div class="block-inner__left block--image" style="background-image: url('{{page.chapter1_image.toFile().url}}'); background-position-x: 25%;"></div>
             <div class="block-inner__right page section block--content" id="over-ons">
                 <div class="content-alt">
                     <div class="content-alt__inner" style="color:#ffffff">
@@ -97,62 +97,22 @@
         <div class="section page flex-height flex-alt js-scroll-section block">
             <div class="block-inner" style="width: 100%;">
                 <div class="section testimonials group">
-                    <div class="testimonial-wrapper">
-                        <div class="testimonial">
-                            <div class="square">
-                                <div class="ratio-inner">
-                                    <div class="testimonial-image" style="background-image: url('uploads/pers-yvonne-kleur.jpg');"></div>
+
+					{% for item in page.teamList.toStructure() %}
+                        <div class="testimonial-wrapper">
+                            <div class="testimonial">
+                                <div class="square">
+                                    <div class="ratio-inner">
+                                        <div class="testimonial-image" style="background-image: url('{{item.content.teamItemImage.toFile().url}}');"></div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="testimonial-info">
-                            <h3 class="testimonial-title">Yvonne</h3>
-                            <p></p>
-                        </div>
-                    </div>
-         
-                  
-                     <div class="testimonial-wrapper">
-                        <div class="testimonial">
-                            <div class="square">
-                                <div class="ratio-inner">
-                                    <div class="testimonial-image" style="background-image: url('uploads/pers-tessa-kleur.jpg'); background-position: center 14%;"></div>
-                                </div>
+                            <div class="testimonial-info">
+                                <h3 class="testimonial-title">{{item.content.teamItem}}</h3>
+                                <p></p>
                             </div>
                         </div>
-                        <div class="testimonial-info">
-                            <h3 class="testimonial-title">Tessa</h3>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class="testimonial-wrapper">
-                        <div class="testimonial">
-                            <div class="square">
-                                <div class="ratio-inner">
-                                    <div class="testimonial-image" style="background-image: url('uploads/pers-jinte-kleur.jpg');"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-info">
-                            <h3 class="testimonial-title">Jinte</h3>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class="testimonial-wrapper">
-                        <div class="testimonial">
-                            <div class="square">
-                                <div class="ratio-inner">
-                                    <div class="testimonial-image" style="background-image: url('uploads/lisa.jpeg'); background-position-y: 10%;"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-info">
-                            <h3 class="testimonial-title">Lisa</h3>
-                            <p></p>
-                        </div>
-                    </div>
-                  
-                   
+					{% endfor %}
                 </div>
             </div>
         </div>

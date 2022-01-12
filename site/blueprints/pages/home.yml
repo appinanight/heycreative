@@ -9,9 +9,16 @@ tabs:
     type: fields
     label: Intro
     fields:
+      siteIntroImage:
+        type: files
+        multiple: false
+        label: Intro afbeelding
+        width: 1/2
+        required: true
       siteIntro:
-          extends: fields/intro
-          label: Website introductie tekst
+        extends: fields/intro
+        label: Website introductie tekst
+      
   
   
   chapter1:
@@ -27,6 +34,7 @@ tabs:
         multiple: false
         label: Hoofdstuk 1 afbeelding
         width: 1/2
+        required: true
       chapter1_text:
         extends: fields/intro
         label: Hoofdstuk 1 tekst
@@ -45,6 +53,7 @@ tabs:
         multiple: false
         label: Hoofdstuk 2 afbeelding
         width: 1/2
+        required: true
       chapter2_text:
         extends: fields/intro
         label: Hoofdstuk 2 tekst
@@ -55,6 +64,7 @@ tabs:
         multiple: false
         label: Hoofdstuk 2b afbeelding
         width: 1/2          
+        required: true
       chapter2b_text:
           extends: fields/intro
           label: Hoofdstuk 2b tekst
@@ -73,6 +83,7 @@ tabs:
         multiple: false
         label: Hoofdstuk 3 afbeelding
         width: 1/2
+        required: true
       chapter3_text:
         extends: fields/intro
         label: Hoofdstuk 3 tekst
@@ -82,7 +93,8 @@ tabs:
         type: files
         multiple: false
         label: Hoofdstuk 3b afbeelding
-        width: 1/2          
+        width: 1/2 
+        required: true         
       chapter3b_text:
           extends: fields/intro
           label: Hoofdstuk 3b tekst
@@ -101,6 +113,7 @@ tabs:
         multiple: false
         label: Hoofdstuk 4 afbeelding
         width: 1/2
+        required: true
       chapter4_text:
         extends: fields/intro
         label: Hoofdstuk 4 tekst
@@ -109,8 +122,22 @@ tabs:
     
   team:
     type: fields
-    label: Team
+    label: Teamleden
     fields:
+      teamList:
+        label: Teamleden
+        type: structure
+        fields:
+          teamItem:
+            label: Naam
+            type: text
+            width: 1/2
+          teamItemImage:
+            type: files
+            multiple: false
+            label: Portretfoto
+            width: 1/2
+            required: true
   
   prices:
     type: fields
